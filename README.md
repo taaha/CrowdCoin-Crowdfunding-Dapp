@@ -1,1 +1,46 @@
-0xec17581A76e92a29040B2Da1A3F01869B236b7F4
+# CrowdCoin Dapp
+This is a dapp for crowdfunding (Idea based on popular crowdfunding app kickstartr). An inventor can create a campaign for funding. Different people can contribute to that campaign but these contributions will not be passed immediately to inventor. Whenever inventor want to spend money, he will have to put a request for a certain amount which will be only accepted if it is approved by majority of contributors. Anyone can see campaign balance and status of different requests.
+  
+-Smart Contract is written in solidity  
+-Front End is written in reactjs (using semantic-ui-react)
+  
+  
+## Please follow these steps to run code succesfully
+### Changes in deploy.js
+-Enter your wallet pneumonic phrase on line 6. remove dummy phrase  
+-Enter your infura endpoint on line 8.  
+  
+### Changes in web3.js
+-Enter your infura endpoint on line 12.  
+
+### Changes in factory.js
+**These changes will be done after running command node deploy.js**  
+-Copy factory contract address.  
+-Place address in factory.js line 6.  
+  
+  
+### Go to project directory in terminal and execute following commands
+```
+npm init
+npm install ganache-cli mocha solc@0.4.17 fs-extra web3
+npm install truffle hardware wallet
+cd ethereum
+node deploy.js
+npm run dev
+```
+## Few Screenshots of frontend
+Main Page
+![Main Page](https://user-images.githubusercontent.com/5251294/186689889-a58aaefb-cf65-4e4d-8b17-1b1884b023f3.png)
+  
+Contribution Page
+![Contribution Page](https://user![Campaign Page](https://user-images.githubusercontent.com/5251294/186689974-afa49c35-79e7-4ac7-95e5-761604d4be0a.png)
+  
+Campaign Page
+![Campaign Pag![Requests Page](https://user-images.githubusercontent.com/5251294/186690131-b039d2aa-4de0-4524-9d78-30595c146873.png)
+  
+Request Status Page
+![Requests Page](https://user-images.githubusercontent.com/5251294/186690316-3bb5e9dd-c872-4989-b6b0-d7eca3ede21f.png)
+  
+  
+## Feel free to build and improve this code
+*May the fork be with you* - Darth Panda :panda_face:
